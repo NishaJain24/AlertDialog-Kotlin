@@ -3,7 +3,8 @@ Alert Dialog Kotlin
 
 MainActivity.kt file
 
-      val dialog = AlertDialog.Builder(requireContext)
+            val dialog = AlertDialog.Builder(requireContext)
+            dialog.setTitle("Delete Wallpaper")
             dialog.setMessage("Do you really want to delete?")
             dialog.setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, which ->
                             Toast.makeText(
